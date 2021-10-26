@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src=".app.js" defer></script>
+    <script src="./app.js" defer></script>
 </head>
 <body>
-    
+    <main class="container">
+        <section class="header">
+            <h1 class="header__title">Tic <span>Tac</span> Toe</h1>
+        </section>
+        <section class="player-info">
+            <p class="player-info__msg">Player <span class="player-info__current-player">X</span>'s move</p>
+        </section>
+        <section class="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </section>
+        <section class="controls">
+            <button id="reset-btn" class="controls__btn btn">Reset</button>
+        </section>
+    </main>
 </body>
 </html>
