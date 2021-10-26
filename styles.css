@@ -26,11 +26,15 @@ body {
 
 .header__title {
     font-size: 32px;
-    color: #545454;
+    color: #ffffff;
     text-align: center;
 }
 
 .header__title > span {
+    color: #545454;
+}
+
+.header__title > span:first-of-type {
     color: #F2EBD3;
 }
 

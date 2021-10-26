@@ -109,7 +109,7 @@ function setBoardClass() {
 
 function setPlayerInfo(player) {
     const playerClass = player == X_SYMBOL ? PLAYER_X_CLASS : PLAYER_O_CLASS;
-    let playerInfoMsg = `Player <span class="info-display__current-player ${playerClass}"></span>'s move`
+    let playerInfoMsg = `Ruch Gracza <span class="info-display__current-player ${playerClass}"></span>`
     infoDisplayMsgElem.innerHTML = playerInfoMsg;
 }
 
@@ -166,11 +166,11 @@ function endGame(result) {
         });
         // Set result message
         const playerClass = currentPlayer == X_SYMBOL ? PLAYER_X_CLASS : PLAYER_O_CLASS;
-        const resultMsg = `Player <span class="info-display__current-player ${playerClass}"></span> is the winner!`
+        const resultMsg = `Zwyciężył Gracz <span class="info-display__current-player ${playerClass}"></span>!`
         infoDisplayMsgElem.innerHTML = resultMsg;
     } else {
         // Set result message
-        const resultMsg = `Tie!`
+        const resultMsg = `Remis!`
         infoDisplayMsgElem.innerHTML = resultMsg;
     }
 
